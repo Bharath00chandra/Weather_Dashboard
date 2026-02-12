@@ -1,0 +1,129 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg,#667eea,#764ba2);
+  min-height:100vh;
+  padding:20px;
+  color:#333;
+}
+.container {
+  max-width:1200px;
+  margin:auto;
+}
+.header {
+  text-align:center;
+  color:#fff;
+  margin-bottom:30px;
+}
+.header h1 {
+  font-size:2.5em;
+}
+.search-box {
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin-bottom:30px;
+}
+.search-box input {
+  padding:12px;
+  width:300px;
+  border:none;
+  border-radius:20px;
+}
+.search-box button {
+  padding:16px 35px;
+  border:none;
+  border-radius: 20px;
+  background-color: #4CAF50;
+  color:#fff;
+  cursor: pointer;
+}
+.current-weather,
+.forecast-section {
+  background-color: #fff;
+  padding:25px;
+  border-radius:20px;
+  margin-bottom:30px;
+}
+.current-weather-header {
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:20px;
+}
+.location {
+  font-size:1.8em;
+  font-weight:bold;
+}
+.date {
+  color:gray;
+}
+.current-main {
+  display:flex;
+  gap:30px;
+  align-items:center;
+  margin-bottom:30px;
+}
+.weather-icon {
+  font-size:5em;
+}
+.temperature {
+  font-size:3.5em;
+  font-weight:bold;
+  color:#667eea;
+}
+.description {
+  color:gray;
+}
+.weather-details {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:15px;
+}
+.detail-item {
+  background: #d4a3bd;
+  padding:15px;
+  border-radius:10px;
+  text-align:center;
+}
+.value {
+  font-weight:bold;
+  font-size:1.3em;
+}
+.hourly-forecast {
+  display:flex;
+  gap:10px;
+  overflow-x:auto;
+}
+.hourly-item {
+  background:#f2f2f2;
+  padding:10px;
+  border-radius:10px;
+  min-width:100px;
+  text-align:center;
+}
+.daily-forecast {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+  gap:10px;
+}
+.daily-item {
+  background:#2ea2c2;
+  padding:15px;
+  border-radius:10px;
+  text-align:center;
+} 
+.loading {
+  text-align:center;
+  color:#fff;
+  font-size:1.5em;
+}
+.error {
+  background:red;
+  color:#fff;
+  padding:10px;
+  text-align:center;
+}
